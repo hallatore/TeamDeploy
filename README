@@ -1,3 +1,7 @@
+A simple wrapper around msdeploy for easier deployment
+Also avoids showing usernames and passwords in the build log.
+
+
 Example usage:
 
 Deploy
