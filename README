@@ -1,0 +1,15 @@
+Example usage:
+
+Deploy
+TeamDeploy -source "E:\Deploy\MyWebApp\_PublishedWebsites\MyWebApp.csproj" -dest "E:\myWebApp" -destMachine "myserver" -ignore ".*\.config"
+
+Backup
+TeamDeploy -source "E:\myWebApp" -sourceMachine "myserver" -dest "E:\Backup\Date(yyyyMMdd-HHmm) - myWebApp.zip" -destMachine "myserver"
+
+
+Arguments
+-source <path to files or zip>	
+-sourceMachine <servername>
+-dest <path to files or zip>
+-destMachine <servername>	
+-ingore <ignoreFormat> 		Ignore files that should not be included in the sync (same structure as msdeploy -ignore)
