@@ -63,7 +63,7 @@ namespace TeamDeploy
             if (Dest.EndsWith(".zip"))
                 dest = string.Format("-dest:package=\"{0}\",encryptPassword=[{1}]", FormatPath(Dest), ConfigurationManager.AppSettings["encryptPassword"]);
             else
-                dest = string.Format("-enableRule:DoNotDeleteRule -dest:contentPath=\"{0}\"", FormatPath(Dest));
+                dest = string.Format("-dest:contentPath=\"{0}\"", FormatPath(Dest));
 
             if (!string.IsNullOrEmpty(DestMachine))
             {
